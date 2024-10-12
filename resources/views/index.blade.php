@@ -11,7 +11,7 @@
 
 </head>
   <body>
-      
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
@@ -68,22 +68,68 @@
                 <div class="col-8">
                         <div class="product-content">
                             <h2>RushOrderTees Classic Tee</h2>
-                            <span>Style: RT2000</span>
+                            <span class="product-style-text">Style: RT2000</span>
                             <span class="star-rate">
                                 <p>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span>569 reviews</span>
                                 </p>
-                                
+
                             </span>
+                            {{-- color selector --}}
+                            <div class="color-selector-cont">
+                                <div class="selector-text-bold">Selected Color:</div>
+                                <div class="selector-selected-color"></div>
+                                <div class="selector-selected-color-name">SAFETY GREEN</div>
+                            </div>
+                            {{-- color buttons --}}
+                            <div class="color-button-cont">
+                                <button class="color-button white" ></button>
+                                <button class="color-button gray"></button>
+                                <button class="color-button m-gray"></button>
+                                <button class="color-button d-gray"></button>
+                                <button class="color-button d-heather"></button>
+                                <button class="color-button forest-green"></button>
+                                <button class="color-button black"></button>
+                                <button class="color-button l-pink"></button>
+                                <button class="color-button red"></button>
+                                <button class="color-button cardinal-red"></button>
+
+                                <button class="color-button white" ></button>
+                                <button class="color-button gray"></button>
+                                <button class="color-button m-gray"></button>
+                                <button class="color-button d-gray"></button>
+                                <button class="color-button d-heather"></button>
+                                <button class="color-button forest-green"></button>
+                                <button class="color-button black"></button>
+                                <button class="color-button l-pink"></button>
+                                <button class="color-button red"></button>
+                                <button class="color-button cardinal-red"></button>
+
+
+                            </div>
+                           {{-- decoration method --}}
+
+                           <div class="decoration-cont">
+                            <h5>Decoration Method:</h5>
+                            <div class="decoration-method">
+                                <p>Printing</p>
+                                <span>No Minimum</span>
+                            </div>
+                           </div>
+                            {{-- customise button --}}
+                            <div class="customise-button-cont">
+                                <button class="customise-button">start designing</button>
+                            </div>
                         </div>
                 </div>
               </div>
         </div>
-         
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
-</html> 
+</html>

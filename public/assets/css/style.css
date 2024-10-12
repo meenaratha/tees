@@ -1,4 +1,10 @@
-.active_img_thumbnail:hover{
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.active_img_thumbnail,.img-thumbnail:hover{
     border: 2px solid #f2f2f2;
     transition: all 0.5 ease;
     border-radius: 4px;
@@ -6,4 +12,145 @@
 .img-thumbnail{
     border: 1px solid transparent;
    margin-top: 10px;
+}
+.star-rate p{
+    padding-top: 20px;
+}
+.star-rate i{
+    color: #EAB308;
+}
+.star-rate span{
+    padding-left: 10px;
+    color: #0283C0;
+}
+.color-selector-cont{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    align-items: center;
+    margin-top: 20px;
+}
+.product-style-text{
+    color: #808080;
+}
+.selector-text-bold{
+font-size: 20px;
+font-weight: 500;
+text-transform: uppercase;
+}
+.selector-selected-color{
+ border-radius: 50%;
+ background: #EAB308;
+ border: 1px solid #2b2b2b;
+ width: 40px;
+ height: 40px;
+ margin: 0px 20px;
+}
+.selector-selected-color-name{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+.color-button-cont{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+.color-button{
+margin: 6px;
+width: 30px;
+height: 30px;
+border: 1px solid #808080;
+margin: 5px 5px;
+border-radius: 50%;
+}
+.color-button:hover{
+ outline: 2px solid #29A6FF;
+ width: 30px;
+height: 30px;
+border: 1px transparent;
+transition: all 0.5 ease;
+}
+.color-button.white {
+    background-color: #FFFFFF; /* White */
+}
+
+.color-button.gray {
+    background-color: #808080; /* Gray */
+}
+
+.color-button.m-gray {
+    background-color: #A9A9A9; /* Medium Gray */
+}
+
+.color-button.d-gray {
+    background-color: #696969; /* Dark Gray */
+}
+
+.color-button.d-heather {
+    background-color: #BEBEBE; /* Dark Heather (light grayish color) */
+}
+
+.color-button.forest-green {
+    background-color: #228B22; /* Forest Green */
+}
+
+.color-button.black {
+    background-color: #000000; /* Black */
+}
+
+.color-button.l-pink {
+    background-color: #FFB6C1; /* Light Pink */
+}
+
+.color-button.red {
+    background-color: #FF0000; /* Red */
+}
+
+.color-button.cardinal-red {
+    background-color: #C41E3A; /* Cardinal Red */
+}
+.customise-button-cont{
+    width: fit-content;
+    padding: 20px;
+}
+.customise-button{
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+    color: #ffff;
+    background-color: #0283C0;
+    font-weight: 600;
+}
+.customise-button:hover{
+    background-color: #016694;
+}
+.decoration-cont{
+ margin-top: 20px;
+ margin-bottom: 20px;
+
+}
+.decoration-cont h5{
+ padding-bottom: 15px;
+ font-weight: 600;
+ font-size: 18px;
+}
+.decoration-method{
+   background-color: #F1F5F9;
+   border-radius: 10px;
+   padding: 10px;
+   width: fit-content;
+}
+.decoration-method p{
+ font-weight: 600;
+ font-size: 16px;
+}
+.decoration-method span{
+font-weight: 400;
+padding-top: -20px;
 }
