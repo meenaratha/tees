@@ -54,8 +54,9 @@
             <div class="row justify-content-start">
                 <div class="col-4 d-flex">
                     <div class="prod-img-cont d-flex">
-                        <div class="col-md-2 thumbnail-images">
-                            <img src="{{asset('/images/backimage.jpg')}}" alt="..." class="img-thumbnail active_img_thumbnail">
+                        <div class="col-md-2 ">
+                            <div class="thumbnail-images">
+                                <img src="{{asset('/images/backimage.jpg')}}" alt="..." class="img-thumbnail active_img_thumbnail">
                             <img src="{{asset('/images/hipimage.jpg')}}" alt="..." class="img-thumbnail">
                             <img src="{{asset('/images/neckimage.jpg')}}" alt="..." class="img-thumbnail">
                             <img src="{{asset('/images/righthand.jpg')}}" alt="..." class="img-thumbnail">
@@ -66,8 +67,8 @@
                             <img src="{{asset('/images/sideimg.jpg')}}" alt="..." class="img-thumbnail">
 
                             <img src="{{asset('/images/sideimg.jpg')}}" alt="..." class="img-thumbnail">
-
-                        </div>
+                            </div>
+                       </div>
                         <div class="col-md-10">
                             <img src="{{asset('/images/fullimage.jpg')}}" class="img-fluid" alt="...">
                         </div>
