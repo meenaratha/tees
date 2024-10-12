@@ -83,33 +83,33 @@
                             {{-- color selector --}}
                             <div class="color-selector-cont">
                                 <div class="selector-text-bold">Selected Color:</div>
-                                <div class="selector-selected-color"></div>
+                                <div class="selector-selected-color"><span><i class="bi bi-check"></i></span></div>
                                 <div class="selector-selected-color-name">SAFETY GREEN</div>
                             </div>
                             {{-- color buttons --}}
                             <div class="color-button-cont">
-                                <button class="color-button white" ></button>
-                                <button class="color-button gray"></button>
-                                <button class="color-button m-gray"></button>
-                                <button class="color-button d-gray"></button>
-                                <button class="color-button d-heather"></button>
-                                <button class="color-button forest-green"></button>
-                                <button class="color-button black"></button>
-                                <button class="color-button l-pink"></button>
-                                <button class="color-button red"></button>
-                                <button class="color-button cardinal-red"></button>
-
-                                <button class="color-button white" ></button>
-                                <button class="color-button gray"></button>
-                                <button class="color-button m-gray"></button>
-                                <button class="color-button d-gray"></button>
-                                <button class="color-button d-heather"></button>
-                                <button class="color-button forest-green"></button>
-                                <button class="color-button black"></button>
-                                <button class="color-button l-pink"></button>
-                                <button class="color-button red"></button>
-                                <button class="color-button cardinal-red"></button>
-
+                               
+                                <button class="color-button white" data-color="#FFFFFF"></button>
+                                <button class="color-button gray" data-color="#808080"></button>
+                                <button class="color-button medium-gray" data-color="#A9A9A9"></button>
+                                <button class="color-button dark-gray" data-color="#696969"></button>
+                                <button class="color-button dark-heather" data-color="#4B3D3D"></button>
+                                <button class="color-button forest-green" data-color="#228B22"></button>
+                                <button class="color-button black" data-color="#000000"></button>
+                                <button class="color-button light-pink" data-color="#FFB6C1"></button>
+                                <button class="color-button red" data-color="#FF0000"></button>
+                                <button class="color-button cardinal-red" data-color="#C8102E"></button>
+                                <button class="color-button sky-blue" data-color="#87CEEB"></button>
+                                <button class="color-button navy-blue" data-color="#000080"></button>
+                                <button class="color-button olive-green" data-color="#808000"></button>
+                                <button class="color-button sandy-beige" data-color="#F4A460"></button>
+                                <button class="color-button coral" data-color="#FF7F50"></button>
+                                <button class="color-button lavender" data-color="#E6E6FA"></button>
+                                <button class="color-button salmon" data-color="#FA8072"></button>
+                                <button class="color-button turquoise" data-color="#40E0D0"></button>
+                                <button class="color-button maroon" data-color="#800000"></button>
+                                <button class="color-button gold" data-color="#FFD700"></button>
+                                <button class="color-button plum" data-color="#DDA0DD"></button>
 
                             </div>
                            {{-- decoration method --}}
@@ -132,4 +132,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
+
+  <script src="{{asset('assets/js/colorselector.js')}}"></script>
+
 </html>

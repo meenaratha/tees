@@ -113,10 +113,15 @@ transition: all 0.5 ease;
 .color-button.cardinal-red {
     background-color: #C41E3A; /* Cardinal Red */
 }
+
+
+
+
 .customise-button-cont{
     width: fit-content;
     padding: 20px;
 }
+
 .customise-button{
     width: fit-content;
     padding: 15px 30px;
@@ -126,20 +131,23 @@ transition: all 0.5 ease;
     color: #ffff;
     background-color: #0283C0;
     font-weight: 600;
-}
+} 
+
 .customise-button:hover{
     background-color: #016694;
 }
+
 .decoration-cont{
  margin-top: 20px;
  margin-bottom: 20px;
-
 }
+
 .decoration-cont h5{
  padding-bottom: 15px;
  font-weight: 600;
  font-size: 18px;
 }
+
 .decoration-method{
    background-color: #F1F5F9;
    border-radius: 10px;
@@ -153,4 +161,91 @@ transition: all 0.5 ease;
 .decoration-method span{
 font-weight: 400;
 padding-top: -20px;
+}
+
+
+
+/* Individual button colors */
+.white {
+    background-color: #FFFFFF;
+}
+
+.gray {
+    background-color: #808080;
+}
+
+.medium-gray {
+    background-color: #A9A9A9;
+}
+
+.dark-gray {
+    background-color: #696969;
+}
+
+.dark-heather {
+    background-color: #4B3D3D;
+}
+
+.forest-green {
+    background-color: #228B22;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.light-pink {
+    background-color: #FFB6C1;
+}
+
+.red {
+    background-color: #FF0000;
+}
+
+.cardinal-red {
+    background-color: #C8102E;
+}
+
+.sky-blue {
+    background-color: #87CEEB;
+}
+
+.navy-blue {
+    background-color: #000080;
+}
+
+.olive-green {
+    background-color: #808000;
+}
+
+.sandy-beige {
+    background-color: #F4A460;
+}
+
+.coral {
+    background-color: #FF7F50;
+}
+
+.lavender {
+    background-color: #E6E6FA;
+}
+
+.salmon {
+    background-color: #FA8072;
+}
+
+.turquoise {
+    background-color: #40E0D0;
+}
+
+.maroon {
+    background-color: #800000;
+}
+
+.gold {
+    background-color: #FFD700;
+}
+
+.plum {
+    background-color: #DDA0DD;
 }
