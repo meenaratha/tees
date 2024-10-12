@@ -83,7 +83,7 @@
                             {{-- color selector --}}
                             <div class="color-selector-cont">
                                 <div class="selector-text-bold">Selected Color:</div>
-                                <div class="selector-selected-color"><span><i class="bi bi-check"></i></span></div>
+                                <div class="selector-selected-color"></div>
                                 <div class="selector-selected-color-name">SAFETY GREEN</div>
                             </div>
                             {{-- color buttons --}}
