@@ -60,9 +60,11 @@
                         <img src="{{asset('/images/sidehandimage.jpg')}}" alt="..." class="img-thumbnail">
                         <img src="{{asset('/images/sideimg.jpg')}}" alt="..." class="img-thumbnail">
                     </div>
-                    
-                        big imahe
+                    <div class="col-md-8">
+                        <img src="{{asset('/images/fullimage.jpg')}}" class="img-fluid" alt="...">
                   
+                    </div>
+                   
                 </div>
                 <div class="col-8">
                   One of two columns
