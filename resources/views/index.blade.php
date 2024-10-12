@@ -88,9 +88,9 @@
                             </div>
                             {{-- color buttons --}}
                             <div class="color-button-cont">
-                               
-                                <button class="color-button white" data-color="#FFFFFF"></button>
-                                <button class="color-button gray" data-color="#808080"></button>
+
+                                <button class="color-button white" data-color="#FFFFFF"><i class="bi bi-check"></i></button>
+                                <button class="color-button gray" data-color="#808080"><i class="bi bi-check"></i></button>
                                 <button class="color-button medium-gray" data-color="#A9A9A9"></button>
                                 <button class="color-button dark-gray" data-color="#696969"></button>
                                 <button class="color-button dark-heather" data-color="#4B3D3D"></button>
