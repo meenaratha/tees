@@ -7,7 +7,47 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    .thumbnail-images {
+    overflow-y: auto;
+    max-height: 400px;
+    scrollbar-width: none; /* For Firefox, hides the scrollbar */
+    scroll-snap-type: y mandatory; /* Enable snapping on vertical scroll */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+/* Child items that should snap */
+.thumbnail-images img {
+    scroll-snap-align: start; /* Snaps the child elements to the start */
+}
+.thumbnail-images::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar for WebKit browsers */
+}
 
+/* On hover, show the scrollbar */
+.thumbnail-images:hover {
+    scrollbar-width: 2px; /* Firefox: makes scrollbar visible on hover */
+}
+
+.thumbnail-images:hover::-webkit-scrollbar {
+    width: 2px; /* Show scrollbar for WebKit browsers on hover */
+}
+
+.thumbnail-images::-webkit-scrollbar-thumb {
+    background-color: #0283C0; /* Thumb (scroll handle) color */
+    height: 20px; /* Thumb height set to 20px */
+    width: 2px;
+}
+
+.thumbnail-images::-webkit-scrollbar-track {
+    background-color: #faf7f7; /* Scrollbar track (background) color */
+}
+
+/* Change thumb color on hover */
+.thumbnail-images::-webkit-scrollbar-thumb:hover {
+    background-color: #0283C0; /* Darken thumb color on hover */
+}
+
+  </style>
 
 </head>
   <body>
@@ -53,17 +93,27 @@
         <div class="container mt-5">
             <div class="row justify-content-start">
                 <div class="col-4 d-flex">
-                    <div class="col-md-2">
-                        <img src="{{asset('/images/backimage.jpg')}}" alt="..." class="img-thumbnail active_img_thumbnail">
-                        <img src="{{asset('/images/hipimage.jpg')}}" alt="..." class="img-thumbnail">
-                        <img src="{{asset('/images/neckimage.jpg')}}" alt="..." class="img-thumbnail">
-                        <img src="{{asset('/images/righthand.jpg')}}" alt="..." class="img-thumbnail">
-                        <img src="{{asset('/images/sidehandimage.jpg')}}" alt="..." class="img-thumbnail">
-                        <img src="{{asset('/images/sideimg.jpg')}}" alt="..." class="img-thumbnail">
+                    <div class="prod-img-cont d-flex">
+                        <div class="col-md-2 ">
+                            <div class="thumbnail-images">
+                                <img src="{{asset('/images/backimage.jpg')}}" alt="..." class="img-thumbnail active_img_thumbnail">
+                            <img src="{{asset('/images/hipimage.jpg')}}" alt="..." class="img-thumbnail">
+                            <img src="{{asset('/images/neckimage.jpg')}}" alt="..." class="img-thumbnail">
+                            <img src="{{asset('/images/righthand.jpg')}}" alt="..." class="img-thumbnail">
+                            <img src="{{asset('/images/sidehandimage.jpg')}}" alt="..." class="img-thumbnail">
+                            <img src="{{asset('/images/sideimg.jpg')}}" alt="..." class="img-thumbnail">
+                            <img src="{{asset('/images/sideimg.jpg')}}" alt="..." class="img-thumbnail">
+
+                            <img src="{{asset('/images/sideimg.jpg')}}" alt="..." class="img-thumbnail">
+
+                            <img src="{{asset('/images/sideimg.jpg')}}" alt="..." class="img-thumbnail">
+                            </div>
+                       </div>
+                        <div class="col-md-10">
+                            <img src="{{asset('/images/fullimage.jpg')}}" class="img-fluid" alt="...">
+                        </div>
                     </div>
-                    <div class="col-md-10">
-                        <img src="{{asset('/images/fullimage.jpg')}}" class="img-fluid" alt="...">
-                    </div>
+
                 </div>
                 <div class="col-8">
                         <div class="product-content">

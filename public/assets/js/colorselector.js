@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Load color from localStorage when the page loads
     function loadColorFromStorage() {
         
-        console.log(localStorage.getItem(),'localStorage.getItem');
+      
         const savedColor = localStorage.getItem("selectedColor");
         if (savedColor) {
             setColor(savedColor);
