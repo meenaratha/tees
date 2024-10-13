@@ -277,9 +277,12 @@ body{
     height: 100%;
 }
 .design-main{
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
+}
+.inner-main{
     height: 100%;
+
 }
 .top-header-cont{
 background: #f2f2f2;
@@ -402,23 +405,7 @@ position: absolute;
         transition: left .5s ease, right .5s ease !important;
     }
 }
-.main-footer{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 0 10px;
-    height: 100px;
-    border-top: 1px solid #e5e7ea;
-    background-color: #fbfbfb;
-    z-index: 10;
-}
-@media (min-width: 1100px) {
-    .main-footer {
-        left: 80px;
-        padding-right: 20px;
-        padding-left: 0;
-    }
-}
+
 .inner-top-header{
     display: flex;
     justify-content: space-around;
@@ -604,11 +591,12 @@ height: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .aside-menu-list ul li{
    border-radius: 5px;
    width: 100%;
+   margin-bottom: 15px;
 }
 .aside-menu-list ul li:hover a{
     color: #27a6ff;
@@ -644,7 +632,23 @@ height: 100%;
 .aside-menu-active a svg {
     fill: #fffefe !important; /* Change SVG fill color for active links */
 }
-
+.main-footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0 10px;
+    height: 70px;
+    border-top: 1px solid #e5e7ea;
+    background-color: #fbfbfb;
+    z-index: 10;
+}
+@media (min-width: 1100px) {
+    .main-footer {
+        left: 80px;
+        padding-right: 20px;
+        padding-left: 0;
+    }
+}
 .bottom-menu-cont
 {
     background: #ffff;
