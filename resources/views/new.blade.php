@@ -237,22 +237,29 @@
                 </section>
 
                 {{-- product design workspace --}}
-            <section class="product-workspace">
-               <div class="product-canvas">
-                <svg viewBox="0 0 100% 100%" class="product-canvas-mask"
-                 draggable="false" style="width:100% ;height:100% ;">
-                <defs ng-if="color.useMask"><mask >
-                 <rect x="0" y="0" width="100%" height="100%" fill="#fff"></rect>
-                <image x="0" y="0" width="100%" height="100%"
-                    xlink:href="{{ asset('images/product_dummy.png') }}"
-                    ng-href="{{ asset('images/product_dummy.png') }}"></image></mask></defs>
-                    {{-- <rect x="0" y="0" ng-if="color.useMask" width="1200" height="1130" ng-attr-fill="" ng-attr-mask="" mask="url(#mask-1)" fill="#ECF844"></rect> --}}
-                    </svg>
-                    <svg viewBox="0 0 100% 100%" preserveAspectRatio="none" class="product-canvas-texture" ng-style="getCSSStyle();" pointer-events="none" draggable="false" ng-if="color.useMask &amp;&amp; getTextureURL();" style="overflow: hidden; width: 100%; height: 100%; ">
-                    <image x="0" y="0" width="100%" height="100%" xlink:href="{{ asset('images/product_texture.png') }}" ng-href="{{ asset('images/product_texture.png') }}"></image></svg>
-
-                </div>
-
+                <section class="product-workspace">
+                  
+                    <div class="product-canvas">
+                        <!-- Masked SVG with dynamic color -->
+                        <svg viewBox="0 0 100% 100%" class="product-canvas-mask" draggable="false" style="width: 100%; height: 100%;">
+                            <defs ng-if="color.useMask">
+                                <mask id="mask-1">
+                                    <rect x="0" y="0" width="100%" height="100%" fill="#fff"></rect>
+                                    <image x="0" y="0" width="100%" height="100%" 
+                                        xlink:href="{{ asset('images/product_dummy.png') }}" 
+                                        ng-href="{{ asset('images/product_dummy.png') }}"></image>
+                                </mask>
+                            </defs>
+                            <!-- This rect will have its fill color dynamically changed -->
+                            <rect id="dynamic-color-rect" x="0" y="0" width="1200" height="1130" mask="url(#mask-1)" fill=""></rect>
+                        </svg>
+                    
+                        <!-- SVG for texture -->
+                        <svg viewBox="0 0 100% 100%" preserveAspectRatio="none" class="product-canvas-texture" pointer-events="none" draggable="false" style="overflow: hidden; width: 100%; height: 100%;">
+                            <image x="0" y="0" width="100%" height="100%" xlink:href="{{ asset('images/product_texture.png') }}"></image>
+                        </svg>
+                    </div>
+                    
 
                 {{-- product design preview --}}
 
@@ -283,5 +290,8 @@
         </main>
          </div>
    </div>
+
+   @include('layout.script');
+  
 </body>
 </html>

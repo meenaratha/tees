@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
             buttons.forEach(button => {
                 if (button.getAttribute('data-color') === savedColor) {
                     addIconToButton(button);
+                    rect.setAttribute('fill', savedColor);
                 }
             });
         }else{
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("mouseover", function() {
             const color = button.getAttribute('data-color');
             setColor(color);
+            rect.setAttribute('fill', color);
         });
 
         button.addEventListener('mouseleave', () => {
@@ -63,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
             setColor(color);
             localStorage.setItem("selectedColor", color); // Store the color in localStorage
             addIconToButton(button); // Add <i> tag to clicked button
+            rect.setAttribute('fill', color);
         });
     });
 
