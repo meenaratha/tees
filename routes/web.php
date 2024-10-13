@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('index');
 });
 Route::get('/design', function () {
-    return view('product-design');
+    return view('product_customize.product-customize');
 });
 Route::get('/new', function () {
     return view('new');
