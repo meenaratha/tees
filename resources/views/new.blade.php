@@ -83,7 +83,8 @@
                                         </a>
                                     </li>
 
-                                    <li class=""><a href=""><svg version="1.0" id="ICONS"
+                                    <li class=""  id="product-add-textBtn"><a href="" id="addTextLink">
+                                        <svg version="1.0" id="ICONS"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;"
@@ -101,33 +102,33 @@
                                             C18.3,12.9,17.9,13.3,17.5,13.3z"></path>
                                                 </g>
                                             </svg>
-                                            <p>Products</p>
+                                            <p>Add Text</p>
                                         </a>
                                     </li>
-
                                     <li class=""><a href=""><svg version="1.0" id="ICONS"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                viewBox="0 0 19.948 18.2" style="enable-background:new 0 0 19.948 18.2;"
-                                                xml:space="preserve">
-                                                <style type="text/css">
-                                                </style>
-                                                <g>
-                                                    <path d="M9.948,18.2c0.5,0,0.8-0.4,0.8-0.8V8.6l1.1,1.1c0.3,0.3,0.9,0.3,1.2,0c0.3-0.3,0.3-0.9,0-1.2l-2.5-2.5
-                                            c-0.3-0.3-0.9-0.3-1.2,0l0,0l-2.5,2.5c-0.3,0.3-0.3,0.9,0,1.2c0.3,0.3,0.9,0.3,1.2,0l1.1-1.1v8.8C9.148,17.9,9.448,18.2,9.948,18.2
-                                            z"></path>
-                                                    <path
-                                                        d="M15.748,4.2c-0.2-2.4-2.2-4.2-4.6-4.2c-1.4,0-2.5,0.5-3.4,1.7h-0.7c-2.5,0-4.5,2-4.6,4.5
-                                            c-2.1,0.9-3,3.4-2.1,5.5c0.6,1.4,2.1,2.4,3.8,2.4h2.5c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8h-2.5c-1.4,0-2.5-1.2-2.5-2.5
-                                            c0-1.1,0.8-2.1,1.9-2.4c0.4-0.1,0.7-0.6,0.6-1c0-0.1,0-0.2,0-0.3c0-1.6,1.3-2.9,2.9-2.9h1.2c0.3,0,0.6-0.2,0.7-0.4
-                                            c0.5-0.9,1.2-1.3,2.2-1.3c1.6,0,2.9,1.3,2.9,2.9l0,0V5c0,0.5,0.4,0.8,0.8,0.8c1.8,0,3.3,1.5,3.3,3.3s-1.5,3.3-3.3,3.3h-1.7
-                                            c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h1.8c2.8,0,5-2.2,5-5C19.948,6.7,18.148,4.6,15.748,4.2z">
-                                                    </path>
-                                                </g>
-                                            </svg>
-                                            <p>Products</p>
-                                        </a>
-                                    </li>
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 19.948 18.2" style="enable-background:new 0 0 19.948 18.2;"
+                                        xml:space="preserve">
+                                        <style type="text/css">
+                                        </style>
+                                        <g>
+                                            <path d="M9.948,18.2c0.5,0,0.8-0.4,0.8-0.8V8.6l1.1,1.1c0.3,0.3,0.9,0.3,1.2,0c0.3-0.3,0.3-0.9,0-1.2l-2.5-2.5
+                                    c-0.3-0.3-0.9-0.3-1.2,0l0,0l-2.5,2.5c-0.3,0.3-0.3,0.9,0,1.2c0.3,0.3,0.9,0.3,1.2,0l1.1-1.1v8.8C9.148,17.9,9.448,18.2,9.948,18.2
+                                    z"></path>
+                                            <path
+                                                d="M15.748,4.2c-0.2-2.4-2.2-4.2-4.6-4.2c-1.4,0-2.5,0.5-3.4,1.7h-0.7c-2.5,0-4.5,2-4.6,4.5
+                                    c-2.1,0.9-3,3.4-2.1,5.5c0.6,1.4,2.1,2.4,3.8,2.4h2.5c0.5,0,0.8-0.4,0.8-0.8c0-0.5-0.4-0.8-0.8-0.8h-2.5c-1.4,0-2.5-1.2-2.5-2.5
+                                    c0-1.1,0.8-2.1,1.9-2.4c0.4-0.1,0.7-0.6,0.6-1c0-0.1,0-0.2,0-0.3c0-1.6,1.3-2.9,2.9-2.9h1.2c0.3,0,0.6-0.2,0.7-0.4
+                                    c0.5-0.9,1.2-1.3,2.2-1.3c1.6,0,2.9,1.3,2.9,2.9l0,0V5c0,0.5,0.4,0.8,0.8,0.8c1.8,0,3.3,1.5,3.3,3.3s-1.5,3.3-3.3,3.3h-1.7
+                                    c-0.5,0-0.8,0.4-0.8,0.8c0,0.5,0.4,0.8,0.8,0.8h1.8c2.8,0,5-2.2,5-5C19.948,6.7,18.148,4.6,15.748,4.2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <p>Upload Art</p>
+                                </a>
+                            </li>
+
                                     <li class=""><a href=""><svg version="1.0" id="Layer_4"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -152,6 +153,7 @@
                                             <p>Products</p>
                                         </a>
                                     </li>
+
                                     <li class=""><a href=""><svg version="1.1" id="Layer_1"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -205,30 +207,115 @@
                              <div class="product-edit-panel">
                                     <div class="inner-product-edit-panel">
                                         <div class="main-menu-panel">
-                                             <span>
-                                                <h2>The issue is likely due to how the parent elements of <body> are defined. In HTML and CSS, for an element to take up 100% of the height, its parent elements must also have a defined height. By default, neither the html element nor the body element has a defined height, so setting height: 100% on the body does not have any effect unless the parent elements (in this case, html and body) are also set to 100% height.
-
-                                                    To fix this, you need to ensure that the html element also has height: 100% specified in your CSS. Here's the updated CSS:
-
-                                                    css</h2>
-                                             </span>
+                                             <div class="main-menu-panel-heading-cont">
+                                                <p class="main-menu-panel-text">PRODUCTS</p>
+                                                <h2 class="main-menu-panel-head">Manage Your Products</h2>
+                                                <p class="sub-cont">You can select multiple products and colors.</p>
+                                             </div>
                                              <div class="product-edit-area">
                                                <div class="d-flex">
                                                   <h2 class="product-title">Tees classic</h2>
-                                                  <span class="change-product-btn">change products</span>
+                                                  <button class="change-product-btn">change products</button>
                                                </div>
                                                <div class="d-flex">
                                                 <div class="img-cont">
                                                     <div class="img-thump">
                                                         <img src="{{ asset('images/fullimage.jpg') }}" alt="">
+                                                        <button class="thump-img-close"> <i class="bi bi-x" ></i></button>
                                                     </div>
                                                     <p style="font-size: 12px; padding-top:5px">Neon Yellow</p>
                                                 </div>
-                                                <button>+</button>
+
+                                                <div class="img-cont">
+                                                    <div class="img-thump">
+                                                        <img src="{{ asset('images/fullimage.jpg') }}" alt="">
+                                                        <button class="thump-img-close"> <i class="bi bi-x"></i></button>
+                                                    </div>
+                                                    <p style="font-size: 12px; padding-top:5px">Neon Yellow</p>
+                                                </div>
+
+                                                <div class="img-cont">
+                                                    <div class="img-thump">
+                                                        <img src="{{ asset('images/fullimage.jpg') }}" alt="">
+                                                        <button class="thump-img-close"> <i class="bi bi-x"></i></button>
+                                                    </div>
+                                                    <p style="font-size: 12px; padding-top:5px">Neon Yellow</p>
+                                                </div>
+
+                                                <div class="img-cont">
+                                                    <div class="img-thump">
+                                                        <img src="{{ asset('images/fullimage.jpg') }}" alt="">
+                                                        <button class="thump-img-close"> <i class="bi bi-x"></i></button>
+                                                    </div>
+                                                    <p style="font-size: 12px; padding-top:5px">Neon Yellow</p>
+                                                </div>
+                                                <div class="img-cont">
+                                                    <div class="img-thump">
+                                                        <img src="{{ asset('images/fullimage.jpg') }}" alt="">
+                                                        <button class="thump-img-close"> <i class="bi bi-x"></i></button>
+                                                    </div>
+                                                    <p style="font-size: 12px; padding-top:5px">Neon Yellow</p>
+                                                </div>
+                                                <div class="tooltip-container">
+                                                <button class="add-color-btn" id="add-colorBtn"><img src="{{ asset('images/add-color-wheel.png') }}" alt="">
+                                                 <!-- Add your button icon or content here -->
+                                                  <span class="color-tooltip">Add Color</span>
+                                                </button>
+                                                {{-- colors popup  --}}
+
+                                                <div class="colors-popup" id="colors-popupModel">
+                                                    <div class="color-popup-header d-flex">
+                                                         <h2>add other color</h2>
+                                                         <i class="bi bi-x" id="color-close-popup"></i>
+                                                    </div>
+                                                    <div class="color-popup-body">
+                                                         {{-- color buttons --}}
+                                                         <div class="color-button-cont">
+
+                                                            <button class="color-button white" data-color="#FFFFFF"><i class="bi bi-check"></i></button>
+                                                            <button class="color-button gray" data-color="#808080"><i class="bi bi-check"></i></button>
+                                                            <button class="color-button medium-gray" data-color="#A9A9A9"></button>
+                                                            <button class="color-button dark-gray" data-color="#696969"></button>
+                                                            <button class="color-button dark-heather" data-color="#4B3D3D"></button>
+                                                            <button class="color-button forest-green" data-color="#228B22"></button>
+                                                            <button class="color-button black" data-color="#000000"></button>
+                                                            <button class="color-button light-pink" data-color="#FFB6C1"></button>
+                                                            <button class="color-button red" data-color="#FF0000"></button>
+                                                            <button class="color-button cardinal-red" data-color="#C8102E"></button>
+                                                            <button class="color-button sky-blue" data-color="#87CEEB"></button>
+                                                            <button class="color-button navy-blue" data-color="#000080"></button>
+                                                            <button class="color-button olive-green" data-color="#808000"></button>
+                                                            <button class="color-button sandy-beige" data-color="#F4A460"></button>
+                                                            <button class="color-button coral" data-color="#FF7F50"></button>
+                                                            <button class="color-button lavender" data-color="#E6E6FA"></button>
+                                                            <button class="color-button salmon" data-color="#FA8072"></button>
+                                                            <button class="color-button turquoise" data-color="#40E0D0"></button>
+                                                            <button class="color-button maroon" data-color="#800000"></button>
+                                                            <button class="color-button gold" data-color="#FFD700"></button>
+                                                            <button class="color-button plum" data-color="#DDA0DD"></button>
+
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
 
 
                                                </div>
                                              </div>
+
+                                             {{-- add other products --}}
+                                             <div class="d-flex">
+                                                <button class="add-other-product-btn" data-bs-toggle="modal" data-bs-target="#addProductModal"><i class="bi bi-plus"></i> Add Other Products</button>
+                                             </div>
+                                        </div>
+
+                                        {{-- add text in a product --}}
+                                        <div class="text-add-panel">
+                                            <button class="text-panel-close" id="textpanel-closeBtn"> <i class="bi bi-x" ></i></button>
+                                             <form class="product-add-text">
+                                                <textarea name="" id="" cols="30" rows="4" placeholder="Type Here....."></textarea>
+                                                <button class="product-text-addBtn" type="submit">Add Text</button>
+                                            </form>
                                         </div>
                                     </div>
                              </div>
@@ -238,28 +325,30 @@
 
                 {{-- product design workspace --}}
                 <section class="product-workspace">
-                  
+
                     <div class="product-canvas">
                         <!-- Masked SVG with dynamic color -->
-                        <svg viewBox="0 0 100% 100%" class="product-canvas-mask" draggable="false" style="width: 100%; height: 100%;">
+                        <svg viewBox="0 0 1200 1130" class="product-canvas-mask" draggable="false" preserveAspectRatio="xMinYMin meet" style="width: 100%; height: 100%;">
                             <defs ng-if="color.useMask">
                                 <mask id="mask-1">
-                                    <rect x="0" y="0" width="100%" height="100%" fill="#fff"></rect>
-                                    <image x="0" y="0" width="100%" height="100%" 
-                                        xlink:href="{{ asset('images/product_dummy.png') }}" 
+                                    <rect x="0" y="0" width="1200" height="1130" fill="#fff"></rect>
+                                    <image x="0" y="0" width="1200" height="1130"
+                                        xlink:href="{{ asset('images/product_dummy.png') }}"
                                         ng-href="{{ asset('images/product_dummy.png') }}"></image>
                                 </mask>
                             </defs>
-                            <!-- This rect will have its fill color dynamically changed -->
-                            <rect id="dynamic-color-rect" x="0" y="0" width="1200" height="1130" mask="url(#mask-1)" fill=""></rect>
+                            <!-- Dynamic fill color applied to this rect -->
+                            <rect id="dynamic-color-rect" x="0" y="0" width="1200" height="1130" mask="url(#mask-1)" fill="yellow"></rect>
                         </svg>
-                    
+
                         <!-- SVG for texture -->
-                        <svg viewBox="0 0 100% 100%" preserveAspectRatio="none" class="product-canvas-texture" pointer-events="none" draggable="false" style="overflow: hidden; width: 100%; height: 100%;">
-                            <image x="0" y="0" width="100%" height="100%" xlink:href="{{ asset('images/product_texture.png') }}"></image>
+                        <svg viewBox="0 0 1200 1130" preserveAspectRatio="xMinYMin meet" class="product-canvas-texture" pointer-events="none" draggable="false" style="overflow: hidden; width: 100%; height: 100%;">
+                            <image x="0" y="0" width="1200" height="1130" xlink:href="{{ asset('images/product_texture.png') }}"></image>
                         </svg>
                     </div>
-                    
+
+
+
 
                 {{-- product design preview --}}
 
@@ -292,6 +381,6 @@
    </div>
 
    @include('layout.script');
-  
+
 </body>
 </html>

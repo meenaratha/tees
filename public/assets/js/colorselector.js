@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     function setColor(color) {
         colorDiv.style.backgroundColor = color;
     }
-    
+
     // Load color from localStorage when the page loads
     function loadColorFromStorage() {
-        
-      
+
+
         const savedColor = localStorage.getItem("selectedColor");
         if (savedColor) {
             setColor(savedColor);
@@ -54,12 +54,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         button.addEventListener('mouseleave', () => {
             loadColorFromStorage();
-            
+
         });
 
         // Click event to set color and save it in localStorage
         button.addEventListener('click', function() {
-           
+
             const color = button.getAttribute('data-color');
             console.log(color,'color');
             setColor(color);
@@ -72,3 +72,55 @@ document.addEventListener("DOMContentLoaded", function() {
     // Load saved color from localStorage when the page loads
     loadColorFromStorage();
 });
+
+
+
+
+// color popup show
+
+//  JavaScript to handle the popup visibility
+    document.getElementById('add-colorBtn').addEventListener('click', function() {
+        document.getElementById('colors-popupModel').style.display = 'block'; // Show the popup
+    });
+
+    document.getElementById('color-close-popup').addEventListener('click', function() {
+        document.getElementById('colors-popupModel').style.display = 'none'; // Hide the popup
+    });
+
+    // Close the popup when clicking outside of it
+    window.addEventListener('click', function(event) {
+        const popup = document.getElementById('colors-popupModel');
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+
+
+    // JavaScript to handle the close button functionality
+    document.querySelectorAll('.thump-img-close').forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove the respective img-cont parent
+            this.closest('.img-cont').remove();
+        });
+    });
+
+
+    // menu access
+
+    document.getElementById('addTextLink').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        // Hide the main menu panel
+        document.querySelector('.main-menu-panel').style.display = 'none';
+        // Show the text add panel
+        document.querySelector('.text-add-panel').style.display = 'block';
+    });
+
+    document.getElementById('textpanel-closeBtn').addEventListener('click', function() {
+        // Hide the text add panel
+        document.querySelector('.text-add-panel').style.display = 'none';
+        // Optionally, show the main menu panel again
+        document.querySelector('.main-menu-panel').style.display = 'block';
+    });
+
+
+

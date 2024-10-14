@@ -329,6 +329,57 @@ aside-menu-list{
     width: 100%;
     height: 100%;
     float: left !important;
+    z-index: 2;
+}
+.main-menu-panel-hide{
+    display: none;
+
+}
+.text-add-panel{
+    background: #fff;
+    z-index: 9;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left !important;
+    display: none;
+}
+.text-add-panel-show{
+    display: block;
+}
+.product-add-text textarea{
+width: 100%;
+outline: none;
+border: 2px solid #29A6FF;
+padding: 5px;
+border-radius: 4px;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+
+/* product color change panel */
+.main-menu-panel-heading-cont{
+padding-bottom: 20px;
+border-bottom: 1px solid #cecbcb;
+margin-bottom: 15px;
+}
+.main-menu-panel-text{
+    color:#29A6FF;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 10px;
+
+}
+.main-menu-panel-head{
+font-size: 22px;
+font-weight: 600;
+color: #696969;
+margin-bottom: 10px;
+}
+.sub-cont{
+font-size: 12px;
+color: #B4B8C1;
 }
 .product-edit-area{
     cursor: default;
@@ -337,12 +388,14 @@ aside-menu-list{
     border-radius: 8px;
     background-color: #f5f8f8;
     margin-bottom: 15px;
-    padding: 8px;
+    padding: 10px 15px;
 }
 .d-flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 .product-title{
     font-size: 18px;
@@ -352,7 +405,67 @@ aside-menu-list{
     width: fit-content;
     padding: 5px 6px;
     border-radius: 20px;
+    border: 1px solid #29A6FF;
+    color: #29A6FF;
+    font-size: 12px;
+    outline: none;
+    background: transparent;
+}
+.add-color-btn{
+    background-color: transparent;
+    border: 2px solid #29a6ff00;
+    border-radius: 50%;
+    padding: 10px 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+
+}
+.tooltip-container {
+    position: relative; /* Position relative for absolute tooltip */
+    display: inline-block; /* Allow inline button positioning */
+
+}
+.color-tooltip {
+    visibility: hidden; /* Hidden by default */
+    width: fit-content; /* Set width of tooltip */
+    background-color: #333; /* Tooltip background */
+    font-size: 12px;
+    text-wrap: nowrap;
+    padding: 5px 9px;
+    color: #fff; /* Tooltip text color */
+    text-align: center; /* Center text */
+    border-radius: 4px; /* Rounded corners */
+    position: absolute; /* Position tooltip */
+    z-index: 1; /* Layering order */
+    bottom: 125%; /* Position above the button */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for width */
+    opacity: 0; /* Start with no opacity */
+    transition: opacity 0.3s; /* Transition for fade effect */
+}
+
+/* Show tooltip on button hover */
+.tooltip-container:hover .color-tooltip {
+    visibility: visible; /* Show tooltip */
+    opacity: 1; /* Fade in */
+}
+.add-color-btn:hover{
     border: 2px solid #29A6FF;
+    box-shadow: 0 0 12px 1px #27a6ff;
+}
+.add-color-btn img{
+    width: 30px;
+    height: 30px;
+}
+.img-cont{
+    flex: 1 0 calc(25% - 10px); /* Make each item take up 25% of the container width minus margin */
+    box-sizing: border-box;
 }
 .img-thump{
     width: 60px;
@@ -360,12 +473,127 @@ aside-menu-list{
     border: 1px solid #29A6FF;
     border-radius: 5px;
     padding: 5px;
+    position: relative;
+    transition: all 0.5s ease;
 
+}
+.img-thump:hover .thump-img-close{
+display: grid;
+}
+.thump-img-close{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px #27a6ff;
+    border: none;
+    color: #fff;
+    background: #27a6ff;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    display: none;
+
+}
+.product-text-addBtn{
+    margin: 5px;
+    padding: 5px 15px;
+    width: fit-content;
+    background-color: #29A6FF;
+    border-radius: 4px;
+    border: none;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.text-panel-close{
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px #27a6ff;
+    border: none;
+    color: #fff;
+    background: #444445;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    float: right;
+    margin: 10px ;
+}
+.text-panel-close i{
+    font-size: 20px;
+}
+.thump-img-close i{
+    color: #fff;
+    font-size: 18px;
 }
 .img-thump img{
     width: 100%;
     height: 100%;
 }
+.add-other-product-btn
+{
+    border: 3px dotted #29A6FF;
+    border-style: dotted;
+    width: 100%;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 2px;
+    background: #fff;
+    color: #2b2b2b;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-other-product-btn i{
+    font-size: 20px;
+    font-weight: 600;
+}
+.add-other-product-btn:hover{
+    color: #27a6ff;
+}
+
+.colors-popup{
+    position: absolute;
+    bottom: -200%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #dadada;
+    padding: 20px 10px;
+    width: 330px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px #27a6ff;
+    display: none;
+}
+.color-popup-show{
+    display: block;
+}
+.color-popup-header{
+ padding-bottom: 20px;
+ border-bottom: 1px solid #f2f2f2;
+ background: #fbfbfb;
+}
+.color-popup-header h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #29A6FF;
+    text-transform: uppercase;
+}
+.color-popup-header i{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: #fff;
+    background: #333;
+    border: none;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+
     /* product design workspace */
     @media (min-width: 1100px) {
         .product-workspace {
@@ -389,14 +617,17 @@ aside-menu-list{
     z-index: 1;
     }
     .product-canvas {
+        display: grid;
+        place-items: center;
         position: absolute;
         top: 0;
         left: 0;
         overflow: hidden;
         background-color: #fff;
-        height: 100%;
-        width: 100%;
+        height: 100%; /* Full viewport height */
+        width: 100%; /* Full viewport width */
     }
+
     svg:not(:root) {
         overflow: hidden;
     }
@@ -404,6 +635,12 @@ aside-menu-list{
         display: block;
         position: absolute;
         z-index: 1;
+    }
+    .product-canvas-texture {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
     }
     /* product preview */
     .product-preview{
@@ -505,3 +742,163 @@ aside-menu-list{
     align-items: center;
     margin-right: 30px;
 }
+
+
+
+/* color popup */
+.color-button-cont{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+  .color-button{
+  margin: 6px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #808080;
+  margin: 5px 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5 ease;
+
+  }
+  .color-button i{
+  font-size: 25px;
+  color: #ffff;
+  }
+  .color-button:hover{
+   outline: 2px solid #29A6FF;
+   width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  }
+  .color-button.white {
+      background-color: #FFFFFF; /* White */
+  }
+
+  .color-button.gray {
+      background-color: #808080; /* Gray */
+  }
+
+  .color-button.m-gray {
+      background-color: #A9A9A9; /* Medium Gray */
+  }
+
+  .color-button.d-gray {
+      background-color: #696969; /* Dark Gray */
+  }
+
+  .color-button.d-heather {
+      background-color: #BEBEBE; /* Dark Heather (light grayish color) */
+  }
+
+  .color-button.forest-green {
+      background-color: #228B22; /* Forest Green */
+  }
+
+  .color-button.black {
+      background-color: #000000; /* Black */
+  }
+
+  .color-button.l-pink {
+      background-color: #FFB6C1; /* Light Pink */
+  }
+
+  .color-button.red {
+      background-color: #FF0000; /* Red */
+  }
+
+  .color-button.cardinal-red {
+      background-color: #C41E3A; /* Cardinal Red */
+  }
+
+/* Individual button colors */
+.white {
+    background-color: #FFFFFF;
+}
+
+.gray {
+    background-color: #808080;
+}
+
+.medium-gray {
+    background-color: #A9A9A9;
+}
+
+.dark-gray {
+    background-color: #696969;
+}
+
+.dark-heather {
+    background-color: #4B3D3D;
+}
+
+.forest-green {
+    background-color: #228B22;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.light-pink {
+    background-color: #FFB6C1;
+}
+
+.red {
+    background-color: #FF0000;
+}
+
+.cardinal-red {
+    background-color: #C8102E;
+}
+
+.sky-blue {
+    background-color: #87CEEB;
+}
+
+.navy-blue {
+    background-color: #000080;
+}
+
+.olive-green {
+    background-color: #808000;
+}
+
+.sandy-beige {
+    background-color: #F4A460;
+}
+
+.coral {
+    background-color: #FF7F50;
+}
+
+.lavender {
+    background-color: #E6E6FA;
+}
+
+.salmon {
+    background-color: #FA8072;
+}
+
+.turquoise {
+    background-color: #40E0D0;
+}
+
+.maroon {
+    background-color: #800000;
+}
+
+.gold {
+    background-color: #FFD700;
+}
+
+.plum {
+    background-color: #DDA0DD;
+}
+
+
