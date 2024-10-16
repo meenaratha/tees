@@ -46,7 +46,7 @@ html, body {
         width: 100%;
         margin: 0 auto;
         padding-right: 20px;
-        padding-left: 80px;
+        padding-left: 10px;
 
     }
     .menu-num-icon{
@@ -681,6 +681,34 @@ display: grid;
         height: 40px;
         margin-bottom: 10px;
     }
+
+/* print area */
+.print-area {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.print-object {
+    position: absolute !important;
+    cursor: move;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+.print-area-guid{
+    width: 480.124px;
+    height: 606.472px;
+    outline: 1px dashed #27a6ff;
+    position: absolute;
+    font-size: 12px;
+    z-index: 99999;
+    pointer-events: none;
+    -webkit-user-select: none;
+    /* visibility: hidden; */
+}
+.product-display{
+    position: relative;
+}
 
     /* footer */
     @media (min-width: 1100px) {

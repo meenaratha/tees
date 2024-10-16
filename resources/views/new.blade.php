@@ -272,27 +272,27 @@
                                                          {{-- color buttons --}}
                                                          <div class="color-button-cont">
 
-                                                            <button class="color-button white" data-color="#FFFFFF"><i class="bi bi-check"></i></button>
-                                                            <button class="color-button gray" data-color="#808080"><i class="bi bi-check"></i></button>
-                                                            <button class="color-button medium-gray" data-color="#A9A9A9"></button>
-                                                            <button class="color-button dark-gray" data-color="#696969"></button>
-                                                            <button class="color-button dark-heather" data-color="#4B3D3D"></button>
-                                                            <button class="color-button forest-green" data-color="#228B22"></button>
-                                                            <button class="color-button black" data-color="#000000"></button>
-                                                            <button class="color-button light-pink" data-color="#FFB6C1"></button>
-                                                            <button class="color-button red" data-color="#FF0000"></button>
-                                                            <button class="color-button cardinal-red" data-color="#C8102E"></button>
-                                                            <button class="color-button sky-blue" data-color="#87CEEB"></button>
-                                                            <button class="color-button navy-blue" data-color="#000080"></button>
-                                                            <button class="color-button olive-green" data-color="#808000"></button>
-                                                            <button class="color-button sandy-beige" data-color="#F4A460"></button>
-                                                            <button class="color-button coral" data-color="#FF7F50"></button>
-                                                            <button class="color-button lavender" data-color="#E6E6FA"></button>
-                                                            <button class="color-button salmon" data-color="#FA8072"></button>
-                                                            <button class="color-button turquoise" data-color="#40E0D0"></button>
-                                                            <button class="color-button maroon" data-color="#800000"></button>
-                                                            <button class="color-button gold" data-color="#FFD700"></button>
-                                                            <button class="color-button plum" data-color="#DDA0DD"></button>
+                                                            <button  id="color-switch" class="color-button white" data-color="#FFFFFF"></button>
+                                                            <button id="color-switch" class="color-button gray" data-color="#808080"></button>
+                                                            <button  id="color-switch" class="color-button medium-gray" data-color="#A9A9A9"></button>
+                                                            <button id="color-switch" class="color-button dark-gray" data-color="#696969"></button>
+                                                            <button id="color-switch" class="color-button dark-heather" data-color="#4B3D3D"></button>
+                                                            <button     id="color-switch" class="color-button forest-green" data-color="#228B22"></button>
+                                                            <button id="color-switch" class="color-button black" data-color="#000000"></button>
+                                                            <button id="color-switch"class="color-button light-pink" data-color="#FFB6C1"></button>
+                                                            <button  id="color-switch" class="color-button red" data-color="#FF0000"></button>
+                                                            <button id="color-switch" class="color-button cardinal-red" data-color="#C8102E"></button>
+                                                            <button id="color-switch" class="color-button sky-blue" data-color="#87CEEB"></button>
+                                                            <button id="color-switch" class="color-button navy-blue" data-color="#000080"></button>
+                                                            <button id="color-switch" class="color-button olive-green" data-color="#808000"></button>
+                                                            <button id="color-switch" class="color-button sandy-beige" data-color="#F4A460"></button>
+                                                            <button id="color-switch"class="color-button coral" data-color="#FF7F50"></button>
+                                                            <button  id="color-switch" class="color-button lavender" data-color="#E6E6FA"></button>
+                                                            <button id="color-switch" class="color-button salmon" data-color="#FA8072"></button>
+                                                            <button id="color-switch" class="color-button turquoise" data-color="#40E0D0"></button>
+                                                            <button id="color-switch" class="color-button maroon" data-color="#800000"></button>
+                                                            <button id="color-switch" class="color-button gold" data-color="#FFD700"></button>
+                                                            <button id="color-switch" class="color-button plum" data-color="#DDA0DD"></button>
 
                                                         </div>
                                                     </div>
@@ -345,6 +345,21 @@
                         <svg viewBox="0 0 1200 1130" preserveAspectRatio="xMinYMin meet" class="product-canvas-texture" pointer-events="none" draggable="false" style="overflow: hidden; width: 100%; height: 100%;">
                             <image x="0" y="0" width="1200" height="1130" xlink:href="{{ asset('images/product_texture.png') }}"></image>
                         </svg>
+
+
+                        {{-- print area --}}
+
+                        <div class="print-area">
+                            <div class="print-area-warning">
+                                Please keep your design inside the bounding box
+                            </div>
+
+                            <div class="print-object">
+                                   <div class="print-area-guid">
+
+                                   </div>
+                            </div>
+                        </div>
                     </div>
 
 

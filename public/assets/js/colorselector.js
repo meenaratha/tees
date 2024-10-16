@@ -1,77 +1,78 @@
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll(".color-button");
     const colorDiv = document.querySelector(".selector-selected-color");
+    const colorNameDiv = document.querySelector(".selector-selected-color-name");
+    const ProductColor = document.querySelector('#dynamic-color-rect');
 
-    // Function to set the background color
-    function setColor(color) {
+    const defaultColor = "#FFFF00"; // Yellow
+    const defaultColorName = "Yellow"; // Name of the default color
+
+    // Function to set the background color and update color name
+    function setColor(color, name) {
         colorDiv.style.backgroundColor = color;
+        colorNameDiv.textContent = name;
     }
 
     // Load color from localStorage when the page loads
     function loadColorFromStorage() {
+        const savedColor = localStorage.getItem("selectedColor") || defaultColor; // Default to yellow if none saved
+        const savedColorName = localStorage.getItem("selectedColorName") || defaultColorName; // Default to yellow name
 
+        setColor(savedColor, savedColorName);
 
-        const savedColor = localStorage.getItem("selectedColor");
-        if (savedColor) {
-            setColor(savedColor);
-            // Add the <i> tag to the corresponding button
-            buttons.forEach(button => {
-                if (button.getAttribute('data-color') === savedColor) {
-                    addIconToButton(button);
-                    rect.setAttribute('fill', savedColor);
-                }
-            });
-        }else{
-            setColor('transparent');
-        }
+        buttons.forEach(button => {
+            if (button.getAttribute('data-color') === savedColor) {
+                addIconToButton(button);
+                ProductColor.setAttribute('fill', savedColor);
+            }
+        });
     }
 
     // Function to add <i> tag to the clicked button
     function addIconToButton(button) {
         buttons.forEach(btn => {
-            // Remove <i> from all buttons
             const icon = btn.querySelector("i");
             if (icon) {
                 btn.removeChild(icon);
             }
         });
-        // Add the <i> tag to the clicked button
+
         if (!button.querySelector("i")) {
             const icon = document.createElement("i");
-            icon.className = "bi bi-check"; // Bootstrap icon classes
+            icon.className = "bi bi-check";
             button.appendChild(icon);
         }
     }
 
     // Set up button click event listeners
     buttons.forEach(button => {
-        // Hover functionality to change color
         button.addEventListener("mouseover", function() {
             const color = button.getAttribute('data-color');
-            setColor(color);
-            rect.setAttribute('fill', color);
+            const colorName = button.getAttribute('data-color-name');
+            setColor(color, colorName);
+            ProductColor.setAttribute('fill', color);
         });
 
         button.addEventListener('mouseleave', () => {
             loadColorFromStorage();
-
         });
 
-        // Click event to set color and save it in localStorage
         button.addEventListener('click', function() {
-
             const color = button.getAttribute('data-color');
-            console.log(color,'color');
-            setColor(color);
-            localStorage.setItem("selectedColor", color); // Store the color in localStorage
-            addIconToButton(button); // Add <i> tag to clicked button
-            rect.setAttribute('fill', color);
+            const colorName = button.getAttribute('data-color-name');
+            setColor(color, colorName);
+            localStorage.setItem("selectedColor", color);
+            localStorage.setItem("selectedColorName", colorName);
+            addIconToButton(button);
+            ProductColor.setAttribute('fill', color);
         });
     });
 
-    // Load saved color from localStorage when the page loads
+    // Load saved color from localStorage when the page loads, or default to yellow
     loadColorFromStorage();
 });
+
+
 
 
 
@@ -123,4 +124,40 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
+// product color change when i click the button color change
 
+// Function to add <i> tag to the clicked button
+function addIconColorButton(button) {
+    // Select all buttons with the class 'color-switch'
+    const colorbuttons = document.querySelectorAll('#color-switch');
+
+    colorbuttons.forEach(btn => {
+        // Remove <i> from all buttons
+        const icon = btn.querySelector("i");
+        if (icon) {
+            btn.removeChild(icon);
+        }
+    });
+
+    // Add the <i> tag to the clicked button
+    if (!button.querySelector("i")) {
+        const icon = document.createElement("i");
+        icon.className = "bi bi-check"; // Bootstrap icon classes
+        button.appendChild(icon);
+    }
+}
+
+// Get the dynamic color rectangle and all color switch buttons
+const dynamicProductColor = document.querySelector('#dynamic-color-rect');
+const colorSwitchButtons = document.querySelectorAll('#color-switch');
+
+// Loop through buttons and set event listeners
+colorSwitchButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        const selectedColor = this.getAttribute('data-color');
+        dynamicProductColor.setAttribute('fill', selectedColor);
+
+        // Add <i> tag to the clicked button
+        addIconColorButton(button); // Corrected: Pass the clicked button
+    });
+});
