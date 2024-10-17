@@ -17,7 +17,7 @@
                 </div>
                 <div class="inner-top-header">
 
-                    <ul class="top-header-menus-cont">
+                    <ul class="top-header-menus-cont overflow-menu">
                         <li class="top-header-menu menu-active"><a href="" class="top-header-link"><span
                                     class="menu-num-icon">1</span>design</a></li>
                         <li class="top-header-menu"><a href="" class="top-header-link"><span
@@ -50,6 +50,11 @@
                         <li class="top-header-menu"><a href="" class="top-header-link"><i
                                     class="bi bi-cart-fill"></i>card</a></li>
                     </ul>
+                    <div class="top-action-btn-cont">
+                        <button type="button" class="next-btn">
+                            Next &nbsp; <i class="bi bi-chevron-right"></i></i>
+                          </button>
+                    </div>
                 </div>
             </header>
 
