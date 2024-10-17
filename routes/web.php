@@ -22,3 +22,4 @@ Route::get('/design', function () {
 Route::get('/new', function () {
     return view('new');
 });
+

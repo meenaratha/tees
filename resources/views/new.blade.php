@@ -354,7 +354,7 @@
 
                         {{-- print area --}}
 
-                        <div class="print-area">
+                        {{-- <div class="print-area">
                             <div class="print-area-warning">
                                 Please keep your design inside the bounding box
                             </div>
@@ -364,7 +364,7 @@
 
                                    </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
 
 
