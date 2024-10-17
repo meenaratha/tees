@@ -76,7 +76,9 @@
     z-index: 2; /* Ensure texture is on top of the mask */
     pointer-events: none; /* Disable interaction with the texture layer */
 }
-
+a{
+    text-decoration: none;
+}
 /* Additional styling for responsiveness */
 @media (max-width: 768px) {
     .product-display {
@@ -189,14 +191,15 @@
 
                    <div class="decoration-cont">
                     <h5>Decoration Method:</h5>
+                 
                     <div class="decoration-method">
-                        <p>Printing</p>
-                        <span>No Minimum</span>
+                        <p>Embroidrary</p>
+                        <span></span>
                     </div>
                    </div>
                     {{-- customise button --}}
                     <div class="customise-button-cont">
-                        <button class="customise-button">start designing</button>
+                        <a class="customise-button" href="{{url('/new')}}">start designing</a>
                     </div>
                 </div>
         </div>
