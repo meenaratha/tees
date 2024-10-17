@@ -191,11 +191,17 @@ a{
 
                    <div class="decoration-cont">
                     <h5>Decoration Method:</h5>
-                 
-                    <div class="decoration-method">
-                        <p>Embroidrary</p>
-                        <span></span>
+                     <div class="embroid-cont" style="display: flex; ">
+                        <div class="decoration-method">
+                            <p>Printing</p>
+                            <span>no minimum</span>
+                        </div>
+                        <div class="decoration-method" style="margin-left: 15px;border:1px solid blue">
+                            <p>Embroidrary</p>
+                            <span>no min</span>
+                        </div>
                     </div>
+
                    </div>
                     {{-- customise button --}}
                     <div class="customise-button-cont">
