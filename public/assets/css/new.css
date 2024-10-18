@@ -729,7 +729,7 @@ svg:not(:root) {
     width: 200px;
     height: 240px;
     top: 120px;
-    left: 280px;
+    /* left: 280px; */
     border: 2px dotted blue;
 }
 

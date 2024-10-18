@@ -325,9 +325,11 @@
 
                                         {{-- add clipart panel --}}
                                         <div class="add-clipart-panel">
-                                            <button class="text-panel-close" id="textpanel-closeBtn"> <i class="bi bi-x" ></i></button>
+                                            <button class="text-panel-close" id="clipartpanel-closeBtn"> <i class="bi bi-x" ></i></button>
+                                             <div class="clipart-content">
 
-                                               <p>clipart</p>
+                                             </div>
+
                                         </div>
                                     </div>
                              </div>

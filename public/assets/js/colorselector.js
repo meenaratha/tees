@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
 
-    document.getElementById('textpanel-closeBtn').addEventListener('click', function() {
+    document.getElementById('clipartpanel-closeBtn').addEventListener('click', function() {
         // Hide the text add panel
         document.querySelector('.add-clipart-panel').style.display = 'none';
         // Optionally, show the main menu panel again
