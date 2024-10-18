@@ -134,7 +134,7 @@
                                 </a>
                             </li>
 
-                                    <li class=""><a href=""><svg version="1.0" id="Layer_4"
+                                    <li class="" id="add-clipart-menu"><a href="" id="add-clipart-link"><svg version="1.0" id="Layer_4"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 19.9 20" style="enable-background:new 0 0 19.9 20;"
@@ -155,7 +155,7 @@
                                                     <circle cx="10.4" cy="7.1" r="1.2"></circle>
                                                 </g>
                                             </svg>
-                                            <p>Products</p>
+                                            <p>Add Clipart</p>
                                         </a>
                                     </li>
 
@@ -322,6 +322,13 @@
                                                 <button class="product-text-addBtn" type="submit">Add Text</button>
                                             </form>
                                         </div>
+
+                                        {{-- add clipart panel --}}
+                                        <div class="add-clipart-panel">
+                                            <button class="text-panel-close" id="textpanel-closeBtn"> <i class="bi bi-x" ></i></button>
+
+                                               <p>clipart</p>
+                                        </div>
                                     </div>
                              </div>
                         </div>
@@ -350,15 +357,19 @@
 
         {{-- print area --}}
 
-        <section class="print-area " >
+        <section class="print-area d-none" >
               <div class="print-object">
                   {{-- text editing ui content --}}
                   <div class="print-object-controls">
-                         <p class="edit-text">text</p>
+                         <div class="edit-text">text
 
                          <div class="print-control-corner print-controller-ui-delete">
                              <img src="{{ asset('images/delete.png') }}" alt="">
                          </div>
+                         <div class="print-control-corner print-controller-ui-resize">
+                            <img src="{{ asset('images/resize.png') }}" alt="">
+                        </div>
+                        </div>
                   </div>
               </div>
         </section>

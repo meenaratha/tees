@@ -814,6 +814,7 @@ svg:not(:root) {
     border: 1px dashed #27a6ff;
     padding: 5px;
     position: relative;
+    z-index: 10;
 }
 .print-control-corner {
     position: absolute;
@@ -824,6 +825,18 @@ svg:not(:root) {
     background-color: #fff;
     box-shadow: 0 2px 8px 0 rgba(204, 207, 214, .2);
     cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.print-controller-ui-delete{
+    top: -20px;
+    left:-15px;
+}
+.print-controller-ui-resize{
+    bottom: -20px;
+    right:-15px;
 }
 .print-control-corner img{
     width: 13px;

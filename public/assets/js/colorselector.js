@@ -127,6 +127,28 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
+    // clipart menu
+
+    document.getElementById('add-clipart-menu').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        // Hide the main menu panel
+        document.querySelector('.main-menu-panel').style.display = 'none';
+        // Show the text add panel
+        document.querySelector('.text-add-panel').style.display = 'none';
+         // Hide the workspace-edit-buttons container
+      document.querySelector('.workspace-edit-buttons').style.display = 'none';
+      document.querySelector('.print-area').style.display = 'block';
+      document.querySelector('.add-clipart-panel').style.display = 'block';
+
+    });
+
+    document.getElementById('textpanel-closeBtn').addEventListener('click', function() {
+        // Hide the text add panel
+        document.querySelector('.add-clipart-panel').style.display = 'none';
+        // Optionally, show the main menu panel again
+        document.querySelector('.main-menu-panel').style.display = 'block';
+    });
+
 // product color change when i click the button color change
 
 // Function to add <i> tag to the clicked button
