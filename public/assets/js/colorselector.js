@@ -114,6 +114,9 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('.main-menu-panel').style.display = 'none';
         // Show the text add panel
         document.querySelector('.text-add-panel').style.display = 'block';
+         // Hide the workspace-edit-buttons container
+      document.querySelector('.workspace-edit-buttons').style.display = 'none';
+      document.querySelector('.print-area').style.display = 'block';
     });
 
     document.getElementById('textpanel-closeBtn').addEventListener('click', function() {
@@ -160,4 +163,47 @@ colorSwitchButtons.forEach(button => {
         // Add <i> tag to the clicked button
         addIconColorButton(button); // Corrected: Pass the clicked button
     });
+});
+
+
+function resizeSVG() {
+    // Select the container where the SVG is placed
+    var canvas = document.querySelector('.product-canvas');
+    var svgMask = document.querySelector('.product-canvas-mask');
+    var svgTexture = document.querySelector('.product-canvas-texture');
+
+    // Get the dimensions of the parent container (or window size)
+    var containerWidth = canvas.offsetWidth;
+
+    // Define your base dimensions (based on the original viewBox of the SVG)
+    var baseWidth = 1200;  // Width from viewBox attribute
+    var baseHeight = 1130; // Height from viewBox attribute
+
+    // Calculate the scale factor
+    var scaleFactor = containerWidth / baseWidth;
+
+    // Adjust the SVG's height according to the scale factor
+    var newHeight = baseHeight * scaleFactor;
+
+    // Define your top offset (for example, -480px)
+    var topOffset = -300 * scaleFactor;  // Adjust top offset according to the scale factor
+
+    // Apply the new width, height, and top offset to the SVG elements
+    svgMask.style.width = containerWidth + 'px';
+    svgMask.style.height = newHeight + 'px';
+    svgMask.style.top = topOffset + 'px';  // Apply the top offset
+
+    svgTexture.style.width = containerWidth + 'px';
+    svgTexture.style.height = newHeight + 'px';
+    svgTexture.style.top = topOffset + 'px';  // Apply the top offset
+}
+
+// Run the resize function on window resize
+window.addEventListener('resize', function () {
+    resizeSVG();
+});
+
+// Run the function initially when the page loads
+window.addEventListener('load', function () {
+    resizeSVG();
 });

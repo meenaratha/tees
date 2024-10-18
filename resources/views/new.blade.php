@@ -328,59 +328,65 @@
                    </div>
                 </section>
 
-                {{-- product design workspace --}}
-                <section class="product-workspace">
+               {{-- product design workspace --}}
+<section class="product-workspace">
+    <div class="product-canvas">
+        <!-- Masked SVG with dynamic color -->
+        <svg viewBox="0 0 1200 1130" class="product-canvas-mask" draggable="false" preserveAspectRatio="xMinYMin meet" style="width: 100%; height: 100%;">
+            <defs ng-if="color.useMask">
+                <mask id="mask-1">
+                    <rect x="0" y="0" width="1200" height="1130" fill="#fff"></rect>
+                    <image x="0" y="0" width="1200" height="1130" xlink:href="{{ asset('images/product_dummy.png') }}"></image>
+                </mask>
+            </defs>
+            <!-- Dynamic fill color applied to this rect -->
+            <rect id="dynamic-color-rect" x="0" y="0" width="1200" height="1130" mask="url(#mask-1)" fill="yellow"></rect>
+        </svg>
 
-                    <div class="product-canvas">
-                        <!-- Masked SVG with dynamic color -->
-                        <svg viewBox="0 0 1200 1130" class="product-canvas-mask" draggable="false" preserveAspectRatio="xMinYMin meet" style="width: 100%; height: 100%;">
-                            <defs ng-if="color.useMask">
-                                <mask id="mask-1">
-                                    <rect x="0" y="0" width="1200" height="1130" fill="#fff"></rect>
-                                    <image x="0" y="0" width="1200" height="1130"
-                                        xlink:href="{{ asset('images/product_dummy.png') }}"
-                                        ng-href="{{ asset('images/product_dummy.png') }}"></image>
-                                </mask>
-                            </defs>
-                            <!-- Dynamic fill color applied to this rect -->
-                            <rect id="dynamic-color-rect" x="0" y="0" width="1200" height="1130" mask="url(#mask-1)" fill="yellow"></rect>
-                        </svg>
+        <!-- SVG for texture -->
+        <svg viewBox="0 0 1200 1130" preserveAspectRatio="xMinYMin meet" class="product-canvas-texture" pointer-events="none" draggable="false" style="overflow: hidden; width: 100%; height: 100%;">
+            <image x="0" y="0" width="1200" height="1130" xlink:href="{{ asset('images/product_texture.png') }}"></image>
+        </svg>
 
-                        <!-- SVG for texture -->
-                        <svg viewBox="0 0 1200 1130" preserveAspectRatio="xMinYMin meet" class="product-canvas-texture" pointer-events="none" draggable="false" style="overflow: hidden; width: 100%; height: 100%;">
-                            <image x="0" y="0" width="1200" height="1130" xlink:href="{{ asset('images/product_texture.png') }}"></image>
-                        </svg>
+        {{-- print area --}}
 
+        <section class="print-area " >
+              <div class="print-object">
+                  {{-- text editing ui content --}}
+                  <div class="print-object-controls">
+                         <p class="edit-text">text</p>
 
-                        {{-- print area --}}
+                         <div class="print-control-corner print-controller-ui-delete">
+                             <img src="{{ asset('images/delete.png') }}" alt="">
+                         </div>
+                  </div>
+              </div>
+        </section>
+    </div>
 
-                        {{-- <div class="print-area">
-                            <div class="print-area-warning">
-                                Please keep your design inside the bounding box
-                            </div>
+    {{-- product design preview --}}
+    <ul class="product-preview">
+        <li class="product-preview-item">
+            <img src="{{ asset('images/fullimage.jpg') }}" alt="">
+        </li>
+        <li class="product-preview-item">
+            <img src="{{ asset('images/fullimage.jpg') }}" alt="">
+        </li>
+    </ul>
 
-                            <div class="print-object">
-                                   <div class="print-area-guid">
-
-                                   </div>
-                            </div>
-                        </div> --}}
-                    </div>
-
-
-
-
-                {{-- product design preview --}}
-
-                <ul class="product-preview">
-                    <li class="product-preview-item">
-                        <img src="{{ asset('images/fullimage.jpg') }}" alt="">
-                    </li>
-                    <li class="product-preview-item">
-                        <img src="{{ asset('images/fullimage.jpg') }}" alt="">
-                    </li>
-                </ul>
-            </section>
+    {{-- workspace welcome edit buttons --}}
+    <section class="workspace-edit-buttons">
+        <button class="welcome-edit-btn">
+            <img src="{{ asset('images/text-editor.png') }}" alt=""> <p>Add text</p>
+        </button>
+        <button class="welcome-edit-btn">
+            <img src="{{ asset('images/upload.png') }}" alt=""> <p>Add image</p>
+        </button>
+        <button class="welcome-edit-btn">
+            <img src="{{ asset('images/upload-image.png') }}" alt=""> <p>Add clipart</p>
+        </button>
+    </section>
+</section>
 
 
             {{-- footer --}}
