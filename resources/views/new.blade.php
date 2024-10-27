@@ -327,7 +327,17 @@
                                         <div class="add-clipart-panel">
                                             <button class="text-panel-close" id="clipartpanel-closeBtn"> <i class="bi bi-x" ></i></button>
                                              <div class="clipart-content">
-
+                                                 <!-- Radio buttons for selecting different button types -->
+    <div class="radio-buttons">
+        <label>
+          <input type="radio" name="buttonType" value="static" checked>
+          Static Image Button
+        </label>
+        <label>
+          <input type="radio" name="buttonType" value="dynamic">
+          Dynamic Image Button
+        </label>
+      </div>
                                              </div>
 
                                         </div>
